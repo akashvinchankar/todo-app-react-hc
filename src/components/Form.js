@@ -43,7 +43,11 @@ const Form = ({ input, setInput, todos, setTodos, editTodo, setEditTodo }) => {
         onChange={onInputChange}
       />
       <button className="button-add" type="submit">
-        {editTodo ? <i className="fa fa-edit"></i> : <i className="fa fa-plus"></i>}
+        {editTodo ? (
+          <i className="fa fa-edit"></i>
+        ) : (
+          <i className="fa fa-plus"></i>
+        )}
       </button>
     </form>
   );

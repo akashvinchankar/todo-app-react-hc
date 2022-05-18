@@ -5,7 +5,6 @@ import Form from "./components/Form";
 import Todoslist from "./components/Todoslist";
 
 const App = () => {
-
   const initialState = JSON.parse(localStorage.getItem("todos")) || [];
   const [input, setInput] = useState("");
   const [todos, setTodos] = useState(initialState);
